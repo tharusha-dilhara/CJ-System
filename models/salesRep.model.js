@@ -50,7 +50,6 @@ const salesRepSchema = mongoose.Schema({
   branchname: {
     type: String,
     required: [true, "Please Enter Branch Name"],
-    unique: true,
   },
   email: {
     type: String,
