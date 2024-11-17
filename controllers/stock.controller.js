@@ -106,7 +106,7 @@ exports.updatePendingItems = async (req, res) => {
           } else {
             // Create a new stock item
             const newStockItem = new PrimaryStock({
-              itemName: item.item_name + " - " + item.rate,
+              itemName: item.item_name ,// නමට අගට රේට් එක බාවිතා කිරීම අයින් කරා
               companyName: stock.companyName, // Adjust as necessary
               companyAddress: stock.companyAddress, // Adjust as necessary
               qty: item.qty,
